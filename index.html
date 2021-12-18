@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Danish Taxes Caluclator</title>
+  </head>
+  <body>
+    <header >
+      <div class="header">
+        <ul  class="languages">
+          <li onclick="ChangeLanguage()"><img src="img/da_DK.png" /> Switch to  <span class="lang">Danish</span></li>
+        </ul>
+        <div class="logo">
+            <img src="img/logo.png" alt="" srcset="">
+        </div>
+        <h3>Welcome to Dainsh Taxes Caluclator</h3>
+        <h4>it's a free tool help you to calculate your taxs !</h4>
+      </div>
+      <div class="container">
+        <div class="inputs">
+          <label for="salary">Your Salary : </label>
+          <input
+            id="salary"
+            placeholder="E.g 15000 (numbers only)"
+            type="number"
+            class="salary"
+          />
+        </div>
+        <div class="inputs">
+            <label for="Taking">Taking of Tax(%) : </label>
+            <input
+              id="Taking"
+              placeholder="E.g 8 (without %)"
+              type="number"
+              class="Taking"
+            />
+          </div>
+        <div class="inputs">
+          <label for="Tax">Tax value(%): </label>
+          <input
+            id="Tax"
+            placeholder="E.g 36 (without %)"
+            type="number"
+            class="Tax"
+          />
+        </div>
+        <div class="inputs">
+            <label for="Before">Before Taking: </label>
+            <input
+              id="Before"
+              placeholder="E.g 8000 (numbers only)"
+              type="number"
+              class="Before"
+            />
+          </div>
+          <button type="button" class="calc_button" onclick="getNetSalary()" value="">Calculation</button>
+      </div>
+    </header>
+    <section>
+      <div class="total">
+        <div class="note">Your NetSalary is :</div>
+        <div class="display-salary">0.00 DKK</div>
+      </div>
+    </section>
+    <footer>
+        <div class="copyright">
+            <i>All right reversed by</i> <a href="http://www.hamyas.dk">@Hamyas Development</a>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
